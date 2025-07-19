@@ -5,7 +5,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import LanguageSelector from './LanguageSelector';
 
 export default function Auth() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
